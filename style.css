@@ -1,0 +1,468 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+@font-face
+{
+    font-family: "Geomanist";
+    src: url("fonts/geomanist-regular.woff2") format("woff2"),
+        url("fonts/geomanist-regular.woff")  format("woff"),
+        url("fonts/geomanist-regular.ttf")   format("truetype"),
+        url("fonts/geomanist-regular.svg")   format("svg"),
+        url("fonts/geomanist-regular.eot")   format("embedded-opentype"); 
+}
+
+/* 1x */
+.left-side
+{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(12, 12, 24, 0),
+        rgba(5, 5, 11, 0) 58%,rgba(5, 5, 10, 0.49)),
+        linear-gradient(to top, rgba(12, 12, 24, 0),
+        rgba(5, 5, 11, 0) 82%, rgba(5, 5, 10, 0.16)),
+        url("./photo/wallpaper.png") 0 / cover no-repeat;
+    position: fixed;
+}
+
+/* 2x */
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+    only screen and (-webkit-min-device-pixel-ratio: 1.25),
+    only screen and (min--moz-device-pixel-ratio: 1.25),
+    only screen and (min-device-pixel-ratio: 1.25),
+    only screen and (min-resolution: 1.25dppx)
+{
+    .left-side
+    {
+        background: linear-gradient(to bottom, rgba(12, 12, 24, 0),
+            rgba(5, 5, 11, 0) 58%, rgba(5, 5, 10, 0.49)),
+            linear-gradient(to top, rgba(12, 12, 24, 0),
+            rgba(5, 5, 11, 0) 82%, rgba(5, 5, 10, 0.16)),
+            url("./photo/wallpaper@2x.png") 0 / cover no-repeat;
+    }
+}
+
+/* 3x */
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+    only screen and (-webkit-min-device-pixel-ratio: 2.25),
+    only screen and (min--moz-device-pixel-ratio: 2.25),
+    only screen and (min-device-pixel-ratio: 2.25),
+    only screen and (min-resolution: 2.25dppx)
+{
+    .left-side
+    {
+        background: linear-gradient(to bottom, rgba(12, 12, 24, 0),
+            rgba(5, 5, 11, 0) 58%, rgba(5, 5, 10, 0.49)),
+            linear-gradient(to top, rgba(12, 12, 24, 0),
+            rgba(5, 5, 11, 0) 82%, rgba(5, 5, 10, 0.16)),
+            url("./photo/wallpaper@2x.png") 0 / cover no-repeat;
+    }
+}
+
+.author-info
+{
+    display: flex;
+    align-items: center;
+    padding: 3.7% 8.7%;
+}
+
+.author-img
+{
+    min-height: 65px;
+    height: 5.5vw;
+    border-radius: 50%;
+    margin-right: 3.6%;
+}
+
+.author-name
+{
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.links
+{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 6% 8.7%;
+    box-sizing: border-box;
+}
+
+.links-back
+{
+    background: url("icons/arrow-left.svg") left center no-repeat;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #fff;
+    padding-left: 2vw;
+    align-self: end;
+}
+
+.links-back:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.links-social
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+}
+
+.links-fb
+{
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.links-fb:hover
+{
+    border-radius: 4px;
+    background: #2E4889;
+}
+
+.links-inst
+{
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.links-inst:hover
+{
+    border-radius: 4px;
+    background: linear-gradient(45deg, #f09433 0%,
+        #e6683c 25%,#dc2743 50%,
+        #cc2366 75%,#bc1888 100%); 
+}
+
+.links-lin
+{
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.links-lin:hover
+{
+    border-radius: 4px;
+    background: #0077b5;
+}
+
+
+.right-side
+{
+    position: absolute;
+    left: 50%;
+}
+
+.description 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.description-header
+{
+    margin-top: auto;
+    font-family: "Geomanist";
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.21;
+    color: #2c2c35;
+}
+
+.description-article
+{
+    margin-top: 0;
+    font-family: Helvetica;
+    font-size: 18px;
+    line-height: 1.56;
+    color: #2c2c35;
+}
+
+.scroll-btn
+{
+    padding: 0;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 5%;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.scroll-btn::before, .scroll-btn::after {
+    content: '';
+    width: 48px;
+    height: 27px;
+    display: block;
+    background: url("./icons/arrow-down.svg") no-repeat;
+    animation: moving 1.5s linear infinite;
+}
+
+@keyframes moving
+{
+    0%
+    {
+        opacity: 0;
+        transform: translate(0, -14px);
+    }
+
+    10%, 90%
+    {
+        opacity: 0.1;
+    }
+    
+    50%
+    {
+        opacity: 1;
+        transform: translate(0, 0px);
+    }
+
+    100%
+    {
+        opacity: 0;
+        transform: translate(0, 14px);
+    }
+}
+
+.scroll-btn::after
+{
+    animation-delay: -0.75s;
+    margin-top: -27px;
+}
+
+.content
+{
+    padding: 2.7% 0;
+}
+
+.content-header
+{
+    font-family: "Geomanist";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #2c2c35;
+    padding: 0 10%;
+}
+
+.header2
+{
+    font-size: 36px;
+}
+
+.header3
+{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.header4
+{
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.content-article
+{
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #2c2c35;
+    padding: 0 10%;
+}
+
+.content-img-left
+{
+    float: left;
+    padding: 0 6% 5% 0;
+}
+
+.content-width100
+{
+    margin: 35px 0;
+}
+
+.content-width100-img
+{
+    width: 100%;
+}
+
+.content-width100-caption
+{
+    text-align: center;
+    color: #ababab;
+    padding: 0 10%;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.content-width100-hr
+{
+    border: solid 1px #d2d2d2;
+}
+
+.content-quote
+{
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+    color: #2c2c35;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.content-img-right
+{
+    float: right;
+    padding: 0 0 5% 6%;
+}
+
+.content-main-end
+{
+    clear: both;
+}
+
+.content-end
+{
+    margin-top: 35px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, rgba(12, 12, 24, 0), 
+        rgba(155, 155, 231, 0) 70%, rgba(5, 5, 10, 0.12));
+}
+
+.content-end-shareBtn
+{
+    width: 64px;
+    height: 64px;
+    border: 0;
+    border-radius: 50%;
+    margin: -18px 8% auto auto;
+    background: url("./icons/share.svg") center no-repeat, #5a5aff;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+
+.content-end-shareBtn:hover
+{
+    background-color: #24248c;
+}
+
+.content-end-additional
+{
+    padding: 0 10%;
+}
+
+.content-end-additional-avatar
+{
+    border-radius: 50%;
+    height: 100%;
+    float: left;
+    margin-right: 40px;
+}
+
+.content-end-additional-avatar-img
+{
+    border-radius: 50%;
+}
+
+.content-end-additional-header
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c2c35;
+    margin: 0;
+}
+
+.content-end-additional-article
+{
+    font-size: 14px;
+    line-height: 1.71;
+    color: #2c2c35;
+}
+
+.content-end-additional-subscribe
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px #dfe2e6;
+    padding-left: 43px;
+    margin-top: 25px;
+    background: url("./icons/mail.svg") 12px center no-repeat, #fff;
+}
+
+.content-end-additional-subscribe-input
+{
+    flex-grow: 2;
+    border: 0;
+    height: 19px;
+    font-size: 16px;
+    min-width: 145px;
+}
+
+.content-end-additional-subscribe-input::placeholder
+{
+    color: #bababa;
+    opacity: 1;
+}
+
+.content-end-additional-subscribe-input:focus::placeholder
+{
+    color: transparent;
+}
+
+.content-end-additional-subscribe-btn
+{
+    font-size: 16px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #29b1cc;
+    border: 0;
+    padding: 0 12px;
+    height: 100%;
+    flex: 1 0 auto;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.content-end-additional-subscribe-btn:hover
+{
+    background-color: #026479;
+}
+
