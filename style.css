@@ -2,7 +2,10 @@ body
 {
     margin: 0;
     padding: 0;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #2c2c35;
 }
 
 @font-face
@@ -79,9 +82,7 @@ body
 
 .author-name
 {
-    font-family: Helvetica;
     font-size: 18px;
-    font-weight: bold;
     color: #fff;
 }
 
@@ -98,13 +99,8 @@ body
 .links-back
 {
     background: url("icons/arrow-left.svg") left center no-repeat;
-    font-family: Helvetica;
     font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.63;
-    letter-spacing: normal;
     color: #fff;
     padding-left: 2vw;
     align-self: end;
@@ -127,7 +123,7 @@ body
 .links-fb
 {
     margin-top: 20px;
-    padding: 5px;
+    padding: 12px 7px 0 14px;
     cursor: pointer;
 }
 
@@ -184,23 +180,21 @@ body
     padding-right: 10%;
 }
 
-.description-header
+h1
 {
     margin-top: auto;
     font-family: "Geomanist";
     font-weight: normal;
     font-size: 48px;
     line-height: 1.21;
-    color: #2c2c35;
 }
 
 .description-article
 {
     margin-top: 0;
-    font-family: Helvetica;
+    padding: 0;
     font-size: 18px;
     line-height: 1.56;
-    color: #2c2c35;
 }
 
 .scroll-btn
@@ -260,40 +254,32 @@ body
     padding: 2.7% 0;
 }
 
-.content-header
+h4, h3, h2
 {
-    font-family: "Geomanist";
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    color: #2c2c35;
+    font-family: "Geomanist", sans-serif;
     padding: 0 10%;
+    font-weight: normal;
 }
 
-.header2
+h2
 {
     font-size: 36px;
 }
 
-.header3
+h3
 {
     font-size: 30px;
     margin-top: 50px;
 }
 
-.header4
+h4
 {
     font-size: 24px;
     margin-top: 50px;
 }
 
-.content-article
+p
 {
-    font-family: Helvetica;
-    font-size: 16px;
-    line-height: 1.75;
-    color: #2c2c35;
     padding: 0 10%;
 }
 
@@ -335,7 +321,6 @@ body
     font-style: italic;
     line-height: 1.6;
     text-align: center;
-    color: #2c2c35;
     margin-left: 14%;
     margin-right: 14%;
 }
@@ -401,9 +386,8 @@ body
 .content-end-additional-header
 {
     font-size: 18px;
-    font-weight: bold;
-    color: #2c2c35;
     margin: 0;
+    font-weight: normal;
 }
 
 .content-end-additional-article
